@@ -97,3 +97,4 @@ const hyeok = {name: 'hyeok', age: 20};
 hyeok.name = 'hyeok2';
 hyeok.age = '27';
 console.log(hyeok);
+
