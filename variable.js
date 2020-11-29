@@ -3,7 +3,7 @@
 // use this for Valina Javascript.
 'use strict';
 
-// 2.Variable
+// 2.Variable, rw(readn or write)
 // let (added in ES6)
 let globalName = 'global name';
 {
@@ -27,7 +27,7 @@ console.log(globalName);
 }
 console.log(age);
 
-// 3.Constant 변경되지 않는 값
+// 3.Constant 변경되지 않는 값, r(read only)
 // favor immutable data type always for a few reasons;
 // - security
 // - thread safety
@@ -35,6 +35,9 @@ console.log(age);
 const daysInWeek = 7;
 const maxNumber = 5;
 
+// Note
+// Immutable data types: primtive types, frozen objects (i.e, object.freeze())
+// Mutable data types: all objects by default are mutable in JS
 // Mutable : let Immutable : const
 
 // 4. Variable types
@@ -97,6 +100,3 @@ const hyeok = {name: 'hyeok', age: 20};
 hyeok.name = 'hyeok2';
 hyeok.age = '27';
 console.log(hyeok);
-
-
-
